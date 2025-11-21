@@ -1,14 +1,16 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
+
 
 function Boton({texto, accion}){
     return (
-        <button
-            className="btn"
+        <Button
+            variant="primary"
             type="button"
             onClick={()=>accion()}
         >
             {texto}
-        </button>
+        </Button>
     )
 }
 
