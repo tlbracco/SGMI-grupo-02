@@ -11,7 +11,7 @@ Example:
     engine = create_engine(os.environ['DATABASE_URL'])
     Base = init_models(engine)
     # Access user model (if table name is login_details):
-    LoginDetails = Base.classes.login_details
+    LoginCredentials = Base.classes.login_details
 
 """
 from sqlalchemy.ext.automap import automap_base
